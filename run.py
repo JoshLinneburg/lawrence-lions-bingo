@@ -1,9 +1,8 @@
 import csv
 import os
 from odf import opendocument, text, teletype
-from random import sample, shuffle
-
 from odf.element import Element
+from random import sample, shuffle
 
 
 def read_square_options(path_to_file: str = "./inputs/bingo_squares.csv"):
