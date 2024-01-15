@@ -42,14 +42,23 @@ def main(contestant_name):
 
         replace_element_text(element, extracted_text, selection)
 
+    print(f"{contestant_name}'s bingo sheet generated!\n")
     document.save(f"./outputs/{contestant_name}_bingo_sheet.odt")
 
 
 if __name__ == "__main__":
 
+    print("Checking if outputs directory exists...")
     if not os.path.exists("./outputs"):
+        print("Directory does not exist, creating...")
         os.mkdir("outputs")
+        print("Created, moving on to sheet generation...\n")
+    else:
+        print("Directory exists, moving on to sheet generation...\n")
 
     contestants = ["Anthony", "Austin", "Cam", "Josh", "Miranda", "Rabih", "Taylor"]
     for contestant in contestants:
+        print(f"Generating {contestant}'s bingo sheet...")
         main(contestant)
+
+    print(f"Created {len(contestants)} bingo sheets, have fun!")
