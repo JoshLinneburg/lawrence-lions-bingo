@@ -36,3 +36,8 @@ pip install -r requirements.txt
 ## How To Run
 At the moment, the repo uses a single `run.py` file with a hard-coded list of contestants, but you can change this yourself.<br>
 CLI options and better user experience is still TBD as this was an afternoon project.
+
+### Run the program
+```shell
+python run.py
+```
