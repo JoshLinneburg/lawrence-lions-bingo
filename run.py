@@ -50,6 +50,6 @@ if __name__ == "__main__":
     if not os.path.exists("./outputs"):
         os.mkdir("outputs")
 
-    contestants = ["Anthony", "Austin", "Cam", "Josh", "Madaline", "Rabih", "Taylor"]
+    contestants = ["Anthony", "Austin", "Cam", "Josh", "Miranda", "Rabih", "Taylor"]
     for contestant in contestants:
         main(contestant)
