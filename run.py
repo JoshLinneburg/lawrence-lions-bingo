@@ -56,7 +56,7 @@ if __name__ == "__main__":
     else:
         print("Directory exists, moving on to sheet generation...\n")
 
-    contestants = ["Anthony", "Austin", "Cam", "Josh", "Miranda", "Rabih", "Taylor"]
+    contestants = ["Cam", "Josh", "Madaline", "Mom"]
     for contestant in contestants:
         print(f"Generating {contestant}'s bingo sheet...")
         main(contestant)
